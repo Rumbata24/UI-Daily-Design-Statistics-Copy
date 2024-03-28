@@ -1,0 +1,48 @@
+.navbar-wrapper {
+  padding: 3rem 3rem 3rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-wrapper p a {
+  font-size: var(--fz-sm);
+  font-family: var(--main-fl);
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+
+  flex-wrap: wrap;
+}
+
+.navbar-container .nav-item {
+}
+
+.navbar-container .nav-item a {
+  font-size: var(--fz-sm);
+  position: relative;
+  font-family: var(--main-fl);
+}
+
+.navbar-container .nav-item.active a {
+  font-weight: 900; /* Make text bold when active */
+}
+
+.navbar-container .nav-item a::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color); /* Change to your desired underline color */
+  transition: width 0.3s ease;
+}
+
+.navbar-container .nav-item.active a::before {
+  width: 50%; /* Expand underline to full width when active */
+}

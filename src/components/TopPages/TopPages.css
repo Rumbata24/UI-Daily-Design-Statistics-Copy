@@ -1,0 +1,52 @@
+.top-pages-wrapper {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px -4 rgba(30, 48, 99, 0.9);
+  padding: 3rem;
+  width: 401px;
+}
+
+.top-pages-visits-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 1.5rem 0;
+}
+
+.top-pages-visits-section p {
+  font-size: 2.4rem;
+  font-family: var(--main-fl);
+}
+
+.top-pages-visits-info .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.top-pages-visits-info .info .visits {
+  width: 282px;
+}
+
+.top-pages-visits-info .info {
+  padding: 0.5rem 0;
+  transition: all 0.3 ease-in-out;
+  cursor: pointer;
+}
+
+.top-pages-visits-info .info p {
+  font-size: 1.6rem;
+  font-family: var(--secondary-fl);
+}
+
+.top-pages-visits-info .info:hover {
+  background-color: #edeff7;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 420px) {
+  .top-pages-wrapper{
+    width: 100%;
+  }
+}
